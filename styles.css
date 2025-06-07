@@ -384,7 +384,7 @@ nav a {
     flex-direction: row;
     text-align: center;
     padding: 2rem;
-    max-width: 410px;
+    width: 85%;
     margin: auto;
   }
 
@@ -408,12 +408,12 @@ nav a {
 }
 
   .imagenlogo img {
-    max-width: 135px;
-    padding: 8px;
+    max-width: 125px;
+    padding: 7px;
   }
 
   .h1clase {
-    font-size: 39px;
+    font-size: 36px;
     font-weight: normal;
     justify-content: space-between;
   }
