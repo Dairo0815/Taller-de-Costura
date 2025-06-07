@@ -384,8 +384,8 @@ nav a {
     flex-direction: row;
     text-align: center;
     padding: 2rem;
-    width: 85%;
-    margin: auto;
+    width: 90%;
+    margin: 0px;
   }
 
   .texto-inicio {
@@ -413,13 +413,13 @@ nav a {
   }
 
   .h1clase {
-    font-size: 33px;
+    font-size: 36px;
     font-weight: normal;
     justify-content: space-between;
   }
 
   .parrafoclase1{
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .botoninicio1 {
