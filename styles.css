@@ -384,8 +384,8 @@ nav a {
     flex-direction: row;
     text-align: center;
     padding: 2rem;
-    width: 90%;
-    margin: 0px;
+    width: 80%;
+    margin: auto;
   }
 
   .texto-inicio {
