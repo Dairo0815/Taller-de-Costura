@@ -1,0 +1,569 @@
+@import url(https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap);
+
+body {
+ margin: 0;
+ font-family: 'Quicksand', sans-serif;
+ font-weight: none;
+ background-color: #FFF8F8;
+ color: #2C2C2C;
+}
+
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px, 32px;
+  background-color: #FFF8F8;
+}
+.logo img{
+  justify-content: center;
+  width: 180px;
+  border-radius: 15px;
+  background-color: rgba(213, 105, 105, 0.78);
+  padding: 8px; 
+}
+
+nav{
+  display: flex;
+  gap: 3rem; 
+  margin-right: 20px; 
+}
+nav a {
+  text-decoration: none;
+  color: #2C2C2C;
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.3s ease;
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+nav a:hover {
+  color: #E8A71B;
+}
+
+.inicio {
+  background-color: #FFF8F8; /* Color del fondo rosado claro */
+  padding: 40px;
+}
+
+
+  .botoninicio1 {
+  background-color: rgba(194, 155, 163, 0.58);
+  color:#2C2C2C;
+  padding: 12px 24px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); 
+  width: fit-content;
+}
+
+.botoninicio1:hover {
+  background-color: #ffffff;
+  color:#E8A71B;
+}
+
+
+
+.h1clase{
+   font-weight: normal;
+  font-size: 80px;
+  color: #E8A71B;
+  font-family: 'Great Vibes', cursive;
+  margin: 0;
+  text-shadow: 
+    -1px -1px 0 rgba(205, 99, 101, 0.05),
+     1px -1px 0 rgba(205, 99, 101, 0.05),
+    -1px  1px 0 rgba(205, 99, 101, 0.05),
+     1px  1px 0 rgba(205, 99, 101, 0.05);
+}
+
+.h2clase {
+  text-align: center;
+  font-weight: normal;
+  font-size: 90px;
+  height: auto;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.h3clase {
+  color: rgba(141, 38, 38, 1);
+  font-size: 50px;
+  height: 10px;
+  text-align: center;
+   color: rgba(141, 38, 38, 1);
+  text-shadow: 
+    -2px -1px 0 rgba(170, 92, 92, 0.08),
+     2px -1px 0 rgba(170, 92, 92, 0.08),
+    -2px  1px 0 rgba(170, 92, 92, 0.08),
+     2px  1px 0 rgba(170, 92, 92, 0.08),
+    0px  0px 1px rgba(170, 92, 92, 0.08); 
+}
+
+.parrafoclase1{
+  font-weight: normal;
+  font-size: 40px;
+  font-family: 'Great Vibes', cursive;
+  margin: 0;
+}
+
+.parrafoclase {
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  height: -30px;
+  font-size: 35px;
+  text-align:center;
+  color: #2C2C2C;
+}
+
+.parrafoclase2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  height: -30px;
+  font-size: 40px;
+  text-align:center;
+  color: #2C2C2C;
+}
+
+.tarjeta-inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFE1D7;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+.texto-inicio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+.imagenlogo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  
+}
+
+.imagenlogo img {
+  max-width: 290px;
+  height: auto;
+  background-color: rgba(213, 105, 105, 0.78);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: space-around;
+  flex-direction:center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  
+}
+.tarjeta-servicio1 {
+  background-color: #FFE1D7; /* color de fondo suave */
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* para que los hijos (img, h3, p) estén en columna */
+  align-items: center;     /* centrar horizontalmente */
+  text-align: center;
+  gap: 3px;  /* espacio entre los elementos */
+}
+
+.tarjeta-servicio1 img {
+  border-radius: 226px;
+  padding: 10px;
+  width: 163px;
+  height: auto;
+}
+
+.tarjeta-servicio2 {
+  background-color: #FFE1D7;
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* para que los hijos (img, h3, p) estén en columna */
+  align-items: center;     /* centrar horizontalmente */
+  text-align: center;
+  gap: 3px; 
+}
+
+.tarjeta-servicio2 img {
+  border-radius: 226px;
+  padding: 10px;
+  width: 163px;
+  height: auto;
+}
+
+.tarjeta-servicio3 {
+  background-color: #FFE1D7;
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* para que los hijos (img, h3, p) estén en columna */
+  align-items: center;     /* centrar horizontalmente */
+  text-align: center;
+  gap: 3px; 
+}
+
+.tarjeta-servicio3 img {
+  border-radius: 226px;
+  padding: 10px;
+  width: 163px;
+  height: auto;
+}
+
+.tarjeta-servicio4 {
+  background-color: #FFE1D7;
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* para que los hijos (img, h3, p) estén en columna */
+  align-items: center;     /* centrar horizontalmente */
+  text-align: center;
+  gap: 3px; 
+}
+
+.tarjeta-servicio4 img {
+  border-radius: 226px;
+  padding: 10px;
+  width: 163px;
+  height: auto;
+}
+
+.tarjeta-comparacion-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #FFE1D7;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.bloque-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.bloque-img img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.bloque-img p {
+  margin-top: 10px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 34px;
+  color: #8D2626;
+}
+
+.sobremi {
+  background-color: #FFF8F8;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.tarjeta-sobremi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.fotodemama img {
+  max-width: 500px;
+  border-radius: 100%;
+  background-color: rgba(213, 105, 105, 0.78);
+  padding: 7px;
+}
+
+.texto-sobremi {
+  flex: 1;
+  font-size: 45px;
+  font-family: 'Great Vibes', cursive;
+  color: #2C2C2C;
+  text-align: left;
+}
+
+
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFE1D7;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- RESPONSIVE PARA CELULARES (pantallas menores de 768px) ---------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.6rem;
+    margin-right: 0;
+    flex-wrap: wrap;
+  }
+
+nav a {
+   font-size: 25px;
+  }
+
+  .tarjeta-inicio {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    padding: 2rem;
+    max-width: 410px;
+    margin: auto;
+  }
+
+  .texto-inicio {
+  flex: 1;
+  display: flex;
+  flex-direction: center;
+  gap: 1rem;
+}
+
+.logo img{
+  width: 140px;
+}
+
+.imagenlogo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 50px;
+  
+}
+
+  .imagenlogo img {
+    max-width: 135px;
+    padding: 8px;
+  }
+
+  .h1clase {
+    font-size: 39px;
+    font-weight: normal;
+    justify-content: space-between;
+  }
+
+  .parrafoclase1{
+    font-size: 19px;
+  }
+
+  .botoninicio1 {
+    font-size: 17px;
+    padding: 6px 12px;
+    font-weight: normal;
+  }
+  .parrafoclase2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .h2clase {
+    font-size: 50px;
+  }
+
+  .h3clase {
+    font-size: 32px;
+  }
+
+  .contenedor-tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-servicio1,
+  .tarjeta-servicio2,
+  .tarjeta-servicio3,
+  .tarjeta-servicio4 {
+    width: 85%;
+  }
+
+  .tarjeta-comparacion-horizontal {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .bloque-img {
+    width: 90%;
+  }
+
+  .tarjeta-sobremi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fotodemama img {
+    max-width: 250px;
+  }
+
+  .texto-sobremi {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contacto {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+}
+
+/* ---------- RESPONSIVE PARA TABLETS (pantallas entre 768px y 1024px) ---------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .tarjeta-inicio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagenlogo img {
+    max-width: 250px;
+  }
+
+  .h1clase {
+    font-size: 60px;
+  }
+
+  .parrafoclase1,
+  .parrafoclase2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .h2clase {
+    font-size: 56px;
+  }
+
+  .h3clase {
+    font-size: 34px;
+  }
+
+  .contenedor-tarjetas {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .tarjeta-servicio1,
+  .tarjeta-servicio2,
+  .tarjeta-servicio3,
+  .tarjeta-servicio4 {
+    width: 45%;
+  }
+
+  .tarjeta-comparacion-horizontal {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .bloque-img {
+    width: 45%;
+  }
+
+  .tarjeta-sobremi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fotodemama img {
+    max-width: 300px;
+  }
+
+  .texto-sobremi {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .contacto {
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
