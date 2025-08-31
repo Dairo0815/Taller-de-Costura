@@ -341,6 +341,15 @@ nav a:hover {
   text-align: left;
 }
 
+.texto-sobremi {
+  background: url("imagenes/fotofondosobremi-removebg.png") no-repeat center/contain;
+  text-align: center;
+  background-size: 60%;
+  padding: 4rem 2rem; /* espacio interno para que el texto no quede pegado */
+  max-width: 900px;   /* ajusta al tamaño que quieras */
+  margin: 2rem auto;  /* centra la caja */
+}
+
 
 
 .contacto {
