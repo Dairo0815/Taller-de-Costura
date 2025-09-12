@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap);
 
 body {
@@ -273,11 +274,12 @@ nav a:hover {
   background-color: #FFE1D7;
   border-radius: 20px;
   padding: 20px;
-  margin: 30px auto;
+  margin: 30px auto ;
   max-width: 800px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
 }
+
 
 .bloque-img {
   display: flex;
@@ -293,6 +295,8 @@ nav a:hover {
   max-width: 310px;
   border-radius: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background-color: #faa8a8;
+  
 }
 
 .bloque-img p {
@@ -344,9 +348,9 @@ nav a:hover {
 .texto-sobremi {
   background: url("imagenes/fotofondosobremi-removebg.png") no-repeat center/contain;
   text-align: center;
-  background-size: 60%;
+  background-size: 62%;
   padding: 4rem 2rem; /* espacio interno para que el texto no quede pegado */
-  max-width: 900px;   /* ajusta al tamaño que quieras */
+  max-width: 1000px;   /* ajusta al tamaño que quieras */
   margin: 2rem auto;  /* centra la caja */
 }
 
@@ -368,6 +372,95 @@ nav a:hover {
 }
 
 
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFE1D7;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+  
+
+.formulario h2,
+.formulario p {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+}
+
+/* FORMULARIO INPUTS */
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+   max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.formulario label {
+  display: block;
+  font-family: 'Great Vibes', cursive; /* Fuente clara y legible */
+  font-size: 40px;
+  font-weight: normal;
+  align-self: flex-start;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #8D2626;
+  background-color: #e08a9b;
+  border-radius: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  outline: none;
+  transition: 0.3s;
+}
+.form textarea {
+  resize: none;
+  height: 10px;
+}
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  border-color: #e08a9b;
+  box-shadow: 0 0 6px rgba(224, 138, 155, 0.5);
+}
+
+/* BOTÓN */
+.formulario button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.formulario button:hover {
+  background-color: #1ebd5a;
+  transform: scale(1.05);
+}
 
 html {
   scroll-behavior: smooth;
@@ -383,16 +476,17 @@ html {
   }
 
   nav {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0.6rem;
-    margin-right: 0;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 15px; /* espacio entre botones */
+    justify-items: center; /* centra los botones dentro de cada columna */
   }
 
 nav a {
-   font-size: 25px;
+    width: 100%; /* cada botón ocupa todo el ancho de su columna */
+    max-width: 100px; /* opcional, para que no se vean gigantes */
+    text-align: center;
+    font-size: 25px;
   }
 
   .tarjeta-inicio {

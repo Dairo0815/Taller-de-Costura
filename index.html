@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de Costura</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -19,6 +20,7 @@
             <a href="#galeria">Galería</a>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#contacto">Contacto</a>
+            <a href="#formulario">Cotización</a>
         </nav>
     </header>
 
@@ -99,6 +101,8 @@
     <div class="bloque-img">
       <img src="imagenes/despues2.jpg" alt="Después">
       <p>Después</p>
+
+      
     </div>
   </div>
 </section>
@@ -144,6 +148,58 @@
         </div>
       </section>
       <br>
-      
+      <br>
+      <br>
+      <!-- FORMULARIO DE CONTACTO A WHATSAPP -->
+<section id="formulario" class="formulario">
+  <h2 class="h2clase"> Solicita tu cotización</h2>
+  <p class="parrafoclase2">Cuéntanos qué prenda deseas arreglar o transformar. ¡Te responderemos lo antes posible!</p>
+  
+  <form id="whatsappForm">
+    <label for="nombre">Nombres y Apellidos:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <label for="servicio">Servicio requerido:</label>
+    <select id="servicio" name="servicio" required>
+      <option value="">Selecciona una opción</option>
+      <option value="Arreglo de ropa">Arreglo de ropa</option>
+      <option value="Transformación de prenda">Transformación de prenda</option>
+      <option value="Bordado personalizado">Bordado personalizado</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+    <label for="mensaje">Detalles del trabajo:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar por WhatsApp</button>
+  </form>
+</section>
+
+<script>
+  document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Tu número de WhatsApp con código de país (ejemplo: Colombia 57)
+    const telefono = "573001112233";
+
+    // Capturar datos
+    const nombre = document.getElementById("nombre").value;
+    const telCliente = document.getElementById("telefono").value;
+    const servicio = document.getElementById("servicio").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    // Crear el texto
+    const texto = `Hola, soy ${nombre}.%0A
+Teléfono: ${telCliente}%0A
+Servicio: ${servicio}%0A
+Detalles: ${mensaje}`;
+
+    // Redirigir a WhatsApp
+    window.open(`https://wa.me/${telefono}?text=${texto}`, "_blank");
+  });
+</script>
 </body>
 </html>
