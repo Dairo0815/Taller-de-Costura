@@ -571,8 +571,14 @@ nav a {
 
   .bloque-img {
     width: 100%;
+    margin: auto;
   }
 
+  .bloque-img img {
+    max-width: 90%;
+    border-radius: 20px;
+    padding: 9px;
+  }
   .tarjeta-sobremi {
     flex-direction: column;
     text-align: center;
@@ -606,7 +612,7 @@ nav a {
 .formulario textarea{
   font-size: 20px;
   padding: 6px;
-  max-width: 350px;
+  max-width: 330px;
 }
   .formulariobutton {
     font-size: 20px;
