@@ -21,6 +21,36 @@ header{
   padding: 16px, 32px;
   background-color: #FFF8F8;
 }
+/* ---- MENÚ STICKY ---- */
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(255, 225, 215, 0.95); /* un rosado suave */
+  box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.3);
+  padding: 6px 3px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+header.sticky .logo img {
+  width: 0px; /* más pequeño en sticky */
+  padding: 0px; 
+  gap: 2px;
+}
+
+header.sticky nav a {
+  font-size: 25px; /* más compacto en sticky */
+  color: #2C2C2C;
+}
+
+header.sticky nav a:hover {
+  
+ color: #E8A71B;
+}
+
 .logo img{
   justify-content: center;
   width: 180px;
@@ -475,26 +505,30 @@ html {
     gap: 2rem;
   }
 
+  header.sticky{
+    padding: 0px 0px;
+    gap: 0px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.3); 
+  }
+  header.sticky .logo img {
+    width: 0px; /* más pequeño en sticky */
+    padding: 0px 0px; 
+    height: 0px;
+  }
+  header.sticky nav a {
+  font-size: 25px; /* más compacto en sticky */
+  color: #2C2C2C;
+  padding: 0px 0px;
+}
   nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(3, 1fr); /* 3columnas */
     gap: 15px; /* espacio entre botones */
     justify-items: center; /* centra los botones dentro de cada columna */
   }
 
-   nav  {
-  position: fixed;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 5px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-radius: 15px;
-  background-color: #FFE1D7; /* o el color que uses */
-  z-index: 1000;
-  box-shadow: 0 9px 5px rgba(0,0,0,0.2);
-}
+  
 
 nav a {
     width: 100%; /* cada botón ocupa todo el ancho de su columna */
