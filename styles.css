@@ -612,7 +612,8 @@ nav a {
 .formulario textarea{
   font-size: 20px;
   padding: 6px;
-  max-width: 330px;
+  max-width: 310px;
+  width: 100%;
 }
   .formulariobutton {
     font-size: 20px;
