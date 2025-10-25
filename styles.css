@@ -1,0 +1,764 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap);
+
+body {
+ margin: 0;
+ font-family: 'Quicksand', sans-serif;
+ font-weight: none;
+ background-color: #FFF8F8;
+ color: #2C2C2C;
+}
+
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px, 32px;
+  background-color: #FFF8F8;
+}
+/* ---- MENÚ STICKY ---- */
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(255, 225, 215, 0.95); /* un rosado suave */
+  box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.3);
+  padding: 6px 3px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+header.sticky .logo img {
+  width: 0px; /* más pequeño en sticky */
+  padding: 0px; 
+  gap: 2px;
+}
+
+header.sticky nav a {
+  font-size: 25px; /* más compacto en sticky */
+  color: #2C2C2C;
+}
+
+header.sticky nav a:hover {
+  
+ color: #E8A71B;
+}
+
+.logo img{
+  justify-content: center;
+  width: 180px;
+  border-radius: 15px;
+  background-color: rgba(213, 105, 105, 0.78);
+  padding: 8px; 
+}
+
+nav{
+  display: flex;
+  gap: 3rem; 
+  margin-right: 20px; 
+}
+nav a {
+  text-decoration: none;
+  color: #2C2C2C;
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.3s ease;
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+nav a:hover {
+  color: #E8A71B;
+}
+
+.inicio {
+  background-color: #FFF8F8; /* Color del fondo rosado claro */
+  padding: 40px;
+}
+
+
+  .botoninicio1 {
+  background-color: rgba(194, 155, 163, 0.58);
+  color:#2C2C2C;
+  padding: 12px 24px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); 
+  width: fit-content;
+}
+
+.botoninicio1:hover {
+  background-color: #ffffff;
+  color:#E8A71B;
+}
+
+
+
+.h1clase{
+   font-weight: normal;
+  font-size: 80px;
+  color: #E8A71B;
+  font-family: 'Great Vibes', cursive;
+  margin: 0;
+  text-shadow: 
+    -1px -1px 0 rgba(205, 99, 101, 0.05),
+     1px -1px 0 rgba(205, 99, 101, 0.05),
+    -1px  1px 0 rgba(205, 99, 101, 0.05),
+     1px  1px 0 rgba(205, 99, 101, 0.05);
+}
+
+.h2clase {
+  text-align: center;
+  font-weight: normal;
+  font-size: 90px;
+  height: auto;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.h3clase {
+  color: rgba(141, 38, 38, 1);
+  font-size: 50px;
+  height: 10px;
+  text-align: center;
+   color: rgba(141, 38, 38, 1);
+  text-shadow: 
+    -2px -1px 0 rgba(170, 92, 92, 0.08),
+     2px -1px 0 rgba(170, 92, 92, 0.08),
+    -2px  1px 0 rgba(170, 92, 92, 0.08),
+     2px  1px 0 rgba(170, 92, 92, 0.08),
+    0px  0px 1px rgba(170, 92, 92, 0.08); 
+}
+
+.parrafoclase1{
+  font-weight: normal;
+  font-size: 40px;
+  font-family: 'Great Vibes', cursive;
+  margin: 0;
+}
+
+.parrafoclase {
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  height: -30px;
+  font-size: 35px;
+  text-align:center;
+  color: #2C2C2C;
+}
+
+.parrafoclase2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  height: -30px;
+  font-size: 40px;
+  text-align:center;
+  color: #2C2C2C;
+}
+
+.tarjeta-inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFE1D7;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+.texto-inicio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+.imagenlogo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  
+}
+
+.imagenlogo img {
+  max-width: 290px;
+  height: auto;
+  background-color: rgba(213, 105, 105, 0.78);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: space-around;
+  flex-direction:center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  
+}
+.tarjeta-servicio1 {
+  background-color: #FFE1D7; /* color de fondo suave */
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* para que los hijos (img, h3, p) estén en columna */
+  align-items: center;     /* centrar horizontalmente */
+  text-align: center;
+  gap: 3px;  /* espacio entre los elementos */
+}
+
+.tarjeta-servicio1 img {
+  border-radius: 226px;
+  padding: 10px;
+  width: 163px;
+  height: auto;
+}
+
+.tarjeta-servicio2 {
+  background-color: #FFE1D7;
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* para que los hijos (img, h3, p) estén en columna */
+  align-items: center;     /* centrar horizontalmente */
+  text-align: center;
+  gap: 3px; 
+}
+
+.tarjeta-servicio2 img {
+  border-radius: 226px;
+  padding: 10px;
+  width: 163px;
+  height: auto;
+}
+
+.tarjeta-servicio3 {
+  background-color: #FFE1D7;
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* para que los hijos (img, h3, p) estén en columna */
+  align-items: center;     /* centrar horizontalmente */
+  text-align: center;
+  gap: 3px; 
+}
+
+.tarjeta-servicio3 img {
+  border-radius: 226px;
+  padding: 10px;
+  width: 163px;
+  height: auto;
+}
+
+.tarjeta-servicio4 {
+  background-color: #FFE1D7;
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* para que los hijos (img, h3, p) estén en columna */
+  align-items: center;     /* centrar horizontalmente */
+  text-align: center;
+  gap: 3px; 
+}
+
+.tarjeta-servicio4 img {
+  border-radius: 226px;
+  padding: 10px;
+  width: 163px;
+  height: auto;
+}
+
+.tarjeta-comparacion-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #FFE1D7;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px auto ;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+
+.bloque-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.bloque-img img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  max-width: 310px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background-color: #faa8a8;
+  
+}
+
+.bloque-img p {
+  margin-top: 10px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 34px;
+  color: #8D2626;
+}
+
+.sobremi {
+  background-color: #FFF8F8;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.tarjeta-sobremi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.galeria img{
+   width: 450px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.fotodemama img {
+  max-width: 500px;
+  border-radius: 100%;
+  background-color: rgba(213, 105, 105, 0.78);
+  padding: 7px;
+}
+
+.texto-sobremi {
+  flex: 1;
+  font-size: 45px;
+  font-family: 'Great Vibes', cursive;
+  color: #2C2C2C;
+  text-align: left;
+}
+
+.texto-sobremi {
+  background: url("imagenes/fotofondosobremi-removebg.png") no-repeat center/contain;
+  text-align: center;
+  background-size: 62%;
+  padding: 4rem 2rem; /* espacio interno para que el texto no quede pegado */
+  max-width: 1000px;   /* ajusta al tamaño que quieras */
+  margin: 2rem auto;  /* centra la caja */
+}
+
+
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFE1D7;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  
+}
+
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFE1D7;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+  
+
+.formulario h2,
+.formulario p {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+}
+
+/* FORMULARIO INPUTS */
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+   max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.formulario label {
+  display: block;
+  font-family: 'Great Vibes', cursive; /* Fuente clara y legible */
+  font-size: 40px;
+  font-weight: normal;
+  align-self: flex-start;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #8D2626;
+  background-color: #e08a9b;
+  border-radius: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  outline: none;
+  transition: 0.3s;
+}
+.form textarea {
+  resize: none;
+  height: 10px;
+}
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  border-color: #e08a9b;
+  box-shadow: 0 0 6px rgba(224, 138, 155, 0.5);
+}
+
+/* BOTÓN */
+.formulario button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.formulario button:hover {
+  background-color: #1ebd5a;
+  transform: scale(1.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- RESPONSIVE PARA CELULARES (pantallas menores de 768px) ---------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  header.sticky{
+    padding: 0px 0px;
+    gap: 0px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.3); 
+  }
+  header.sticky .logo img {
+    width: 0px; /* más pequeño en sticky */
+    padding: 0px 0px; 
+    height: 0px;
+  }
+  header.sticky nav a {
+  font-size: 25px; /* más compacto en sticky */
+  color: #2C2C2C;
+  padding: 0px 0px;
+}
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3columnas */
+    gap: 15px; /* espacio entre botones */
+    justify-items: center; /* centra los botones dentro de cada columna */
+  }
+
+  
+
+nav a {
+    width: 100%; /* cada botón ocupa todo el ancho de su columna */
+    max-width: 100px; /* opcional, para que no se vean gigantes */
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3); 
+  }
+
+  .tarjeta-inicio {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .texto-inicio {
+  flex: 1;
+  display: flex;
+  flex-direction: center;
+  gap: 1rem;
+}
+
+.logo img{
+  width: 140px;
+}
+
+.imagenlogo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 50px;
+  
+}
+
+  .imagenlogo img {
+    max-width: 115px;
+    padding: 7px;
+  }
+
+  .h1clase {
+    font-size: 36px;
+    font-weight: normal;
+    justify-content: space-between;
+  }
+
+  .parrafoclase1{
+    font-size: 17px;
+  }
+
+  .botoninicio1 {
+    font-size: 17px;
+    padding: 6px 12px;
+    font-weight: normal;
+  }
+  .parrafoclase2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .h2clase {
+    font-size: 50px;
+  }
+
+  .h3clase {
+    font-size: 32px;
+  }
+
+  .contenedor-tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-servicio1,
+  .tarjeta-servicio2,
+  .tarjeta-servicio3,
+  .tarjeta-servicio4 {
+    width: 85%;
+  }
+
+  .tarjeta-comparacion-horizontal {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .bloque-img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .bloque-img img {
+    max-width: 90%;
+    border-radius: 20px;
+    padding: 9px;
+  }
+  .tarjeta-sobremi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fotodemama img {
+    max-width: 290px;
+  }
+
+  .texto-sobremi {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .texto-sobremi {
+  background: url("imagenes/fotofondosobremi-removebg.png") no-repeat center/contain;
+  text-align: center;
+  background-size: 100%;
+  padding: 4rem 2rem; /* espacio interno para que el texto no quede pegado */
+  max-width: 1000px;   /* ajusta al tamaño que quieras */
+  margin: 2rem auto;  /* centra la caja */
+}
+
+  .contacto {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .formulario input,
+.formulario select,
+.formulario textarea{
+  font-size: 20px;
+  padding: 6px;
+  max-width: 300px;
+  width: 100%;
+}
+  .formulariobutton {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  .formulario label{
+    font-size: 30px;
+    text-align: center;
+
+  }
+
+}
+
+/* ---------- RESPONSIVE PARA TABLETS (pantallas entre 768px y 1024px) ---------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+ 
+  .tarjeta-inicio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagenlogo img {
+    max-width: 250px;
+  }
+
+  .h1clase {
+    font-size: 60px;
+  }
+
+  .parrafoclase1,
+  .parrafoclase2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .h2clase {
+    font-size: 56px;
+  }
+
+  .h3clase {
+    font-size: 34px;
+  }
+
+  .contenedor-tarjetas {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .tarjeta-servicio1,
+  .tarjeta-servicio2,
+  .tarjeta-servicio3,
+  .tarjeta-servicio4 {
+    width: 45%;
+  }
+
+  .tarjeta-comparacion-horizontal {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .bloque-img {
+    width: 45%;
+  }
+
+  .tarjeta-sobremi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fotodemama img {
+    max-width: 300px;
+  }
+
+  .texto-sobremi {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .contacto {
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
